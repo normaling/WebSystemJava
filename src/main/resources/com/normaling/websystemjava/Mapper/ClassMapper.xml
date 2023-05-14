@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.normaling.websystemjava.Mapper.ClassMapper">
+    <select id="getClassesList" resultType="com.normaling.websystemjava.Model.Classes">
+        select * from classes
+    </select>
+    <delete id="deleteClassById">
+        delete from classes where id=#{id}
+    </delete>
+    <insert id="addClass">
+        insert into classes(name, create_time, update_time)
+        values (#{name},#{createTime},#{updateTime})
+    </insert>
+    <select id="findById" resultType="com.normaling.websystemjava.Model.Classes">
+        select * from classes where id=#{id}
+    </select>
+    <update id="updateClass">
+        update classes set name=#{name} where id=#{id}
+    </update>
+</mapper>
