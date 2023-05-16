@@ -48,7 +48,7 @@ public class LoginController {
         claims.put("id", e.getId());
         claims.put("name", e.getName());
         claims.put("username", e.getUsername());
-        Date jwtContinue=new Date(System.currentTimeMillis()+3600*1000);
+        Date jwtContinue=new Date(System.currentTimeMillis()+3600*1000 * 24);//生效48小时
         String jwt=JWTUtil.genJWT(claims,"normaling", SignatureAlgorithm.HS256,jwtContinue);
         return jwt;
     }
