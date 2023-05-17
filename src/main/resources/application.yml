@@ -30,5 +30,9 @@ github:
     url: "https://cdn.jsdelivr.net/gh/${github.bucket.user}/${github.bucket.repository}/"
     api: "https://api.github.com/repos/${github.bucket.user}/${github.bucket.repository}/contents/"
 
+# 开启事务日志
+logging:
+  level:
+    org.springframework.jdbc.support.JdbcTransactionManager: debug
 
 

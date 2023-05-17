@@ -1,6 +1,7 @@
 package com.normaling.websystemjava.Mapper;
 
 import com.normaling.websystemjava.Model.Emp;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -42,4 +43,11 @@ public interface EmpMapper {
 
     @Select("select * from emp where username=#{username} and password=#{password}")
     Emp getByAccount(Emp emp);
+
+    /**
+     * 根据部门ID删除该部门下的员工数据
+     * @param deptId
+     */
+    @Delete("delete from emp where dept_id=#{deptId}")
+    void deleteByDeptId(Integer deptId);
 }
