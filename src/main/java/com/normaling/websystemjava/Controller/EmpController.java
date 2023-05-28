@@ -3,6 +3,7 @@ import com.normaling.websystemjava.Model.Emp;
 import com.normaling.websystemjava.Model.PageBean;
 import com.normaling.websystemjava.Model.Result;
 import com.normaling.websystemjava.Service.EmpService;
+import com.normaling.websystemjava.anno.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
@@ -42,6 +43,7 @@ public class EmpController {
      * @param ids
      * @return
      */
+    @Log
     @DeleteMapping("{ids}")
     public Result deleteEmps(@PathVariable Integer[] ids){
         empService.deleteEmps(ids);
@@ -53,6 +55,7 @@ public class EmpController {
      * @param emp
      * @return
      */
+    @Log
     @PostMapping
     public Result addEmp(@RequestBody Emp emp){
         empService.addEmp(emp);
@@ -75,6 +78,7 @@ public class EmpController {
      * @param emp
      * @return
      */
+    @Log
     @PutMapping
     public Result updateEmp(@RequestBody Emp emp){
         empService.updateEmp(emp);

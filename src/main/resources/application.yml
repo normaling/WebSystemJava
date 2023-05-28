@@ -17,19 +17,6 @@ mybatis:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     map-underscore-to-camel-case: true
-
-#GitHub图床配置(已弃用）
-github:
-  bucket:
-    # 配置仓库所属的用户名（如果是自己创建的，就是自己的用户名）
-    user: "normaling"
-    # 配置仓库名称
-    repository: "image-bucket"
-    # 配置自己的acccessToken
-    access-token: "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"
-    url: "https://cdn.jsdelivr.net/gh/${github.bucket.user}/${github.bucket.repository}/"
-    api: "https://api.github.com/repos/${github.bucket.user}/${github.bucket.repository}/contents/"
-
 # 开启事务日志
 logging:
   level:

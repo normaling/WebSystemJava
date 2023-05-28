@@ -6,6 +6,7 @@ import com.normaling.websystemjava.Model.Result;
 import com.normaling.websystemjava.Model.Student;
 import com.normaling.websystemjava.Service.EmpService;
 import com.normaling.websystemjava.Service.StudentService;
+import com.normaling.websystemjava.anno.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.*;
@@ -44,6 +45,7 @@ public class StudentController {
      * @param ids
      * @return
      */
+    @Log
     @DeleteMapping("{ids}")
     public Result deleteStudents(@PathVariable Integer[] ids){
         studentService.deleteStudents(ids);
@@ -66,6 +68,7 @@ public class StudentController {
      * @param student
      * @return
      */
+    @Log
     @PutMapping
     public Result updateStudent(@RequestBody Student student){
 

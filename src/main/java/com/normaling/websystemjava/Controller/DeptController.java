@@ -3,6 +3,7 @@ package com.normaling.websystemjava.Controller;
 import com.normaling.websystemjava.Model.Dept;
 import com.normaling.websystemjava.Model.Result;
 import com.normaling.websystemjava.Service.DeptService;
+import com.normaling.websystemjava.anno.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,6 +30,7 @@ public class DeptController {
      * 根据id删除部门
      * @return
      */
+    @Log
     @DeleteMapping("{id}")
     public Result deleteDeptById(@PathVariable Integer id){
         deptService.deleteDeptById(id);
@@ -40,6 +42,7 @@ public class DeptController {
      * @param dept
      * @return
      */
+    @Log
     @PostMapping
     public Result addDept(@RequestBody Dept dept){
         deptService.addDept(dept);
@@ -57,6 +60,12 @@ public class DeptController {
         return Result.success(data);
     }
 
+    /**
+     * 更新部门信息
+     * @param dept
+     * @return
+     */
+    @Log
     @PutMapping
     public Result updateDept(@RequestBody Dept dept){
         deptService.updateDept(dept);

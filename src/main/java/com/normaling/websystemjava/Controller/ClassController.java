@@ -3,6 +3,7 @@ package com.normaling.websystemjava.Controller;
 import com.normaling.websystemjava.Model.Classes;
 import com.normaling.websystemjava.Model.Result;
 import com.normaling.websystemjava.Service.ClassService;
+import com.normaling.websystemjava.anno.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,6 +27,7 @@ public class ClassController {
      * 根据id删除班级
      * @return
      */
+    @Log
     @DeleteMapping("{id}")
     public Result deleteDeptById(@PathVariable Integer id){
         classService.deleteClassById(id);
@@ -36,6 +38,7 @@ public class ClassController {
      * @param classes
      * @return
      */
+    @Log
     @PostMapping
     public Result addClass(@RequestBody Classes classes){
         classService.addClass(classes);
@@ -57,6 +60,7 @@ public class ClassController {
      * @param classes
      * @return
      */
+    @Log
     @PutMapping
     public Result updateClass(@RequestBody Classes classes){
         classService.updateClass(classes);
