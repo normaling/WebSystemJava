@@ -1,7 +1,6 @@
 package com.normaling.websystemjava.Service.Impl;
 import com.normaling.websystemjava.Mapper.ClassesLogMapper;
 import com.normaling.websystemjava.Model.ClassesLog;
-import com.normaling.websystemjava.Model.DeptLog;
 import com.normaling.websystemjava.Service.ClassesLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

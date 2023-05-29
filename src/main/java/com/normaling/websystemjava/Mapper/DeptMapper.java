@@ -1,7 +1,6 @@
 package com.normaling.websystemjava.Mapper;
 
 import com.normaling.websystemjava.Model.Dept;
-import com.normaling.websystemjava.Model.Result;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.time.LocalDateTime;

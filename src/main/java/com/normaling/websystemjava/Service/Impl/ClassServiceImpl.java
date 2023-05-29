@@ -4,7 +4,6 @@ import com.normaling.websystemjava.Mapper.ClassMapper;
 import com.normaling.websystemjava.Mapper.StudentMapper;
 import com.normaling.websystemjava.Model.Classes;
 import com.normaling.websystemjava.Model.ClassesLog;
-import com.normaling.websystemjava.Model.DeptLog;
 import com.normaling.websystemjava.Service.ClassService;
 import com.normaling.websystemjava.Service.ClassesLogService;
 import org.springframework.beans.factory.annotation.Autowired;

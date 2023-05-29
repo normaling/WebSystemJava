@@ -1,5 +1,4 @@
 package com.normaling.websystemjava.Mapper;
-import com.normaling.websystemjava.Model.GroupCount;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.time.LocalDate;

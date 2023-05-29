@@ -1,9 +1,7 @@
 package com.normaling.websystemjava.Service;
 
 import com.normaling.websystemjava.Model.Dept;
-import com.normaling.websystemjava.Model.Result;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 public interface DeptService {

@@ -1,7 +1,6 @@
 package com.normaling.websystemjava.Mapper;
 
 import com.normaling.websystemjava.Model.ClassesLog;
-import com.normaling.websystemjava.Model.DeptLog;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 

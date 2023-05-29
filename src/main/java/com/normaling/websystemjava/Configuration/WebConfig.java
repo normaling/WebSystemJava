@@ -1,5 +1,4 @@
 package com.normaling.websystemjava.Configuration;
-
 import com.normaling.websystemjava.interceptor.LoginCheckInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

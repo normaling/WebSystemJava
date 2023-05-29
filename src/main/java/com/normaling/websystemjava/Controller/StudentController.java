@@ -1,10 +1,8 @@
 package com.normaling.websystemjava.Controller;
 
-import com.normaling.websystemjava.Model.Emp;
 import com.normaling.websystemjava.Model.PageBean;
 import com.normaling.websystemjava.Model.Result;
 import com.normaling.websystemjava.Model.Student;
-import com.normaling.websystemjava.Service.EmpService;
 import com.normaling.websystemjava.Service.StudentService;
 import com.normaling.websystemjava.anno.Log;
 import org.springframework.beans.factory.annotation.Autowired;

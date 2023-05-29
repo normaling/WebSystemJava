@@ -2,7 +2,6 @@ package com.normaling.websystemjava.Controller;
 
 import com.normaling.websystemjava.Model.GroupCount;
 import com.normaling.websystemjava.Model.Result;
-import com.normaling.websystemjava.Service.EmpRepService;
 import com.normaling.websystemjava.Service.StudentRepService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;

@@ -1,5 +1,4 @@
 package com.normaling.websystemjava.Controller;
-
 import com.normaling.websystemjava.Model.Dept;
 import com.normaling.websystemjava.Model.Result;
 import com.normaling.websystemjava.Service.DeptService;
